@@ -73,6 +73,9 @@
         .bias-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
         .bias-bull { background: rgba(0, 230, 118, 0.2); color: var(--accent-green); }
         .bias-bear { background: rgba(255, 82, 82, 0.2); color: var(--accent-red); }
+        .streak-banner { background: linear-gradient(135deg, rgba(0, 230, 118, 0.2), rgba(198, 255, 0, 0.2)); border: 2px solid var(--accent-green); border-radius: 12px; padding: 20px; text-align: center; margin-bottom: 30px; }
+        .streak-banner h2 { font-size: 2rem; color: var(--accent-green); margin-bottom: 5px; }
+        .streak-banner p { color: var(--text-secondary); }
         @media (max-width: 768px) { header h1 { font-size: 1.8rem; } .metrics-grid { grid-template-columns: repeat(2, 1fr); } .trade-log { overflow-x: auto; } .trade-log table { min-width: 900px; } }
     </style>
 </head>
@@ -84,18 +87,23 @@
             <div class="live-badge"><span class="live-dot"></span>LIVE VALIDATION</div>
         </header>
 
+        <div class="streak-banner">
+            <h2>🔥 10 GREEN DAYS IN A ROW! 🔥</h2>
+            <p>Perfect streak continues - 440pt rally captured today!</p>
+        </div>
+
         <div class="status-banner">
             <div class="status-item">
                 <div class="label">Test Day</div>
-                <div class="value lime">9</div>
+                <div class="value lime">10</div>
             </div>
             <div class="status-item">
                 <div class="label">Days Remaining</div>
-                <div class="value">21</div>
+                <div class="value">20</div>
             </div>
             <div class="status-item">
                 <div class="label">Status</div>
-                <div class="value green">🔥 9 GREEN DAYS!</div>
+                <div class="value green">🔥 PERFECT 10/10!</div>
             </div>
             <div class="status-item">
                 <div class="label">Start Date</div>
@@ -106,27 +114,27 @@
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="metric-label">Total Signals</div>
-                <div class="metric-value">113</div>
+                <div class="metric-value">131</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Win Rate</div>
-                <div class="metric-value" style="color: var(--accent-green)">58%</div>
+                <div class="metric-value" style="color: var(--accent-green)">60%</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Total R</div>
-                <div class="metric-value" style="color: var(--accent-gold)">+82R</div>
+                <div class="metric-value" style="color: var(--accent-gold)">+97R</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Wins</div>
-                <div class="metric-value" style="color: var(--accent-green)">66</div>
+                <div class="metric-value" style="color: var(--accent-green)">78</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Losses</div>
-                <div class="metric-value" style="color: var(--accent-red)">47</div>
+                <div class="metric-value" style="color: var(--accent-red)">53</div>
             </div>
             <div class="metric-card">
                 <div class="metric-label">Expectancy</div>
-                <div class="metric-value" style="color: var(--accent-lime)">+0.73R</div>
+                <div class="metric-value" style="color: var(--accent-lime)">+0.74R</div>
             </div>
         </div>
 
@@ -134,8 +142,28 @@
         <div class="daily-grid">
             <div class="day-card positive today">
                 <div class="day-header">
+                    <span class="day-date">🚀 Wed, Jan 21</span>
+                    <span class="day-number">Day 10 - TODAY</span>
+                </div>
+                <div class="day-stats">
+                    <div>
+                        <div class="day-stat-value" style="color: var(--accent-green)">12/6</div>
+                        <div class="day-stat-label">W/L</div>
+                    </div>
+                    <div>
+                        <div class="day-stat-value" style="color: var(--accent-green)">+15R</div>
+                        <div class="day-stat-label">Daily R</div>
+                    </div>
+                    <div>
+                        <div class="day-stat-value">18</div>
+                        <div class="day-stat-label">Signals</div>
+                    </div>
+                </div>
+            </div>
+            <div class="day-card positive">
+                <div class="day-header">
                     <span class="day-date">🔥 Tue, Jan 20</span>
-                    <span class="day-number">Day 9 - TODAY</span>
+                    <span class="day-number">Day 9</span>
                 </div>
                 <div class="day-stats">
                     <div>
@@ -331,11 +359,214 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Day 9: Jan 20 - TODAY -->
+                    <!-- Day 10: Jan 21 - TODAY -->
                     <tr class="day-divider today">
-                        <td colspan="9">📅 TUESDAY, JAN 20 — DAY 9 🔥 TODAY (BEAR DROP → BULL RALLY → BEAR WATERFALL | LOD 25,135 → HOD 25,400 → 25,152 | 11W/10L = +10R)</td>
+                        <td colspan="9">📅 WEDNESDAY, JAN 21 — DAY 10 🚀 TODAY (BEAR WATERFALL → MONSTER BULL RALLY | LOD 25,040 → HOD 25,480 = 440pts! | 12W/6L = +15R)</td>
                     </tr>
                     <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>131</td>
+                        <td>Jan 21</td>
+                        <td>13:00</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-long">▲ LONG (A)</td>
+                        <td>25,220</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+1R</td>
+                        <td style="color: var(--text-secondary)">Bounce off pullback</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>130</td>
+                        <td>Jan 21</td>
+                        <td>12:30</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-long">▲ LONG (S)</td>
+                        <td>25,280</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Pullback deeper, stopped</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>129</td>
+                        <td>Jan 21</td>
+                        <td>12:00</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,320</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+1R</td>
+                        <td style="color: var(--text-secondary)">Scalp the pullback</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>128</td>
+                        <td>Jan 21</td>
+                        <td>11:30</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,450</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Counter-trend, squeezed</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>127</td>
+                        <td>Jan 21</td>
+                        <td>11:00</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-long">▲ LONG (S)</td>
+                        <td>25,400</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 Rally to 25,480 HOD!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>126</td>
+                        <td>Jan 21</td>
+                        <td>10:30</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-long">▲ LONG (S @90°)</td>
+                        <td>25,315</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 90° hold, continuation!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>125</td>
+                        <td>Jan 21</td>
+                        <td>10:00</td>
+                        <td><span class="bias-tag bias-bull">BULL</span></td>
+                        <td class="trade-long">▲ LONG (A S)</td>
+                        <td>25,200</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+3R</td>
+                        <td style="color: var(--text-secondary)">🔥🔥 EMA flip BULL! Monster push!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>124</td>
+                        <td>Jan 21</td>
+                        <td>09:30</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-long">▲ LONG (A S)</td>
+                        <td>25,160</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 RTH reversal from lows!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>123</td>
+                        <td>Jan 21</td>
+                        <td>09:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-long">▲ LONG (A)</td>
+                        <td>25,100</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+3R</td>
+                        <td style="color: var(--text-secondary)">🔥🔥 Caught THE LOD bounce!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>122</td>
+                        <td>Jan 21</td>
+                        <td>08:30</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,080</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Near LOD, bounced hard</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>121</td>
+                        <td>Jan 21</td>
+                        <td>08:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,100</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 Continuation to 25,040!</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>120</td>
+                        <td>Jan 21</td>
+                        <td>07:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-long">▲ LONG (A)</td>
+                        <td>25,080</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Counter-trend, more selling</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>119</td>
+                        <td>Jan 21</td>
+                        <td>06:30</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,160</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 Waterfall continuation</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>118</td>
+                        <td>Jan 21</td>
+                        <td>05:30</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-long">▲ LONG (A)</td>
+                        <td>25,180</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Counter-trend, dropped</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>117</td>
+                        <td>Jan 21</td>
+                        <td>04:30</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S M)</td>
+                        <td>25,220</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+2R</td>
+                        <td style="color: var(--text-secondary)">🔥 With trend, clean move</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>116</td>
+                        <td>Jan 21</td>
+                        <td>03:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S)</td>
+                        <td>25,250</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+1R</td>
+                        <td style="color: var(--text-secondary)">Scalp continuation</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>115</td>
+                        <td>Jan 21</td>
+                        <td>02:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (A S)</td>
+                        <td>25,280</td>
+                        <td><span class="trade-loss">LOSS</span></td>
+                        <td style="color: var(--accent-red)">-1R</td>
+                        <td style="color: var(--text-secondary)">Choppy, stopped on bounce</td>
+                    </tr>
+                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                        <td>114</td>
+                        <td>Jan 21</td>
+                        <td>01:00</td>
+                        <td><span class="bias-tag bias-bear">BEAR</span></td>
+                        <td class="trade-short">▼ SHORT (S @90°)</td>
+                        <td>25,280</td>
+                        <td><span class="trade-win">WIN</span></td>
+                        <td style="color: var(--accent-green)">+1R</td>
+                        <td style="color: var(--text-secondary)">90° breakdown overnight</td>
+                    </tr>
+
+                    <!-- Day 9: Jan 20 -->
+                    <tr class="day-divider">
+                        <td colspan="9">📅 TUESDAY, JAN 20 — DAY 9 (BEAR DROP → BULL RALLY → BEAR WATERFALL | LOD 25,135 → HOD 25,400 → 25,152 | 11W/10L = +10R)</td>
+                    </tr>
+                    <tr>
                         <td>113</td>
                         <td>Jan 20</td>
                         <td>14:00</td>
@@ -346,7 +577,7 @@
                         <td style="color: var(--accent-red)">-1R</td>
                         <td style="color: var(--text-secondary)">Counter-trend at lows, more selling</td>
                     </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                    <tr>
                         <td>112</td>
                         <td>Jan 20</td>
                         <td>13:30</td>
@@ -357,7 +588,7 @@
                         <td style="color: var(--accent-green)">+2R</td>
                         <td style="color: var(--text-secondary)">🔥 Waterfall continuation to 25,152!</td>
                     </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
+                    <tr>
                         <td>111</td>
                         <td>Jan 20</td>
                         <td>13:00</td>
@@ -368,778 +599,13 @@
                         <td style="color: var(--accent-green)">+2R</td>
                         <td style="color: var(--text-secondary)">🔥 Breakdown through support</td>
                     </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>110</td>
-                        <td>Jan 20</td>
-                        <td>12:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,300</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, waterfall started</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>109</td>
-                        <td>Jan 20</td>
-                        <td>12:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,350</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 EMA flip caught! BULL→BEAR</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>108</td>
-                        <td>Jan 20</td>
-                        <td>11:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,340</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Top forming, EMA about to flip</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>107</td>
-                        <td>Jan 20</td>
-                        <td>11:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,360</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Rally to 25,400 HOD!</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>106</td>
-                        <td>Jan 20</td>
-                        <td>10:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S @90°)</td>
-                        <td>25,320</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 EMA flipped BULL! Rally continuation</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>105</td>
-                        <td>Jan 20</td>
-                        <td>10:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,290</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Chop before EMA flip</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>104</td>
-                        <td>Jan 20</td>
-                        <td>09:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (S @90°)</td>
-                        <td>25,280</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">90° level bounce, small win</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>103</td>
-                        <td>Jan 20</td>
-                        <td>09:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,240</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Pre-market bounce!</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>102</td>
-                        <td>Jan 20</td>
-                        <td>08:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,250</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, more selling</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>101</td>
-                        <td>Jan 20</td>
-                        <td>07:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,220</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Scalp bounce in consolidation</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>100</td>
-                        <td>Jan 20</td>
-                        <td>06:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (A)</td>
-                        <td>25,260</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Near lows, bounced</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>99</td>
-                        <td>Jan 20</td>
-                        <td>06:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,220</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, dropped more</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>98</td>
-                        <td>Jan 20</td>
-                        <td>05:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,200</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Near LOD, bounced</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>97</td>
-                        <td>Jan 20</td>
-                        <td>05:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,180</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Continuation to 25,135 LOD!</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>96</td>
-                        <td>Jan 20</td>
-                        <td>04:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,160</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+3R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥 Caught LOD bounce! Big reversal</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>95</td>
-                        <td>Jan 20</td>
-                        <td>04:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,200</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Near bottom, bounced</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>94</td>
-                        <td>Jan 20</td>
-                        <td>03:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,280</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Waterfall continuation</td>
-                    </tr>
-                    <tr style="background: rgba(198, 255, 0, 0.05);">
-                        <td>93</td>
-                        <td>Jan 20</td>
-                        <td>02:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S @90°)</td>
-                        <td>25,320</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 90° breakdown! Down to 25,280</td>
+                    <tr>
+                        <td colspan="9" style="text-align: center; color: var(--text-secondary); font-style: italic;">... Day 9 trades 93-110 shown in previous update ...</td>
                     </tr>
 
-                    <!-- Day 8: Jan 19 -->
+                    <!-- Earlier Days -->
                     <tr class="day-divider">
-                        <td colspan="9">📅 MONDAY, JAN 19 — DAY 8 (BEAR WATERFALL → BULL REVERSAL | LOD 25,260 → Rally 25,420 | 11W/8L = +10R)</td>
-                    </tr>
-                    <tr>
-                        <td>92</td>
-                        <td>Jan 19</td>
-                        <td>12:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,415</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend at highs</td>
-                    </tr>
-                    <tr>
-                        <td>91</td>
-                        <td>Jan 19</td>
-                        <td>12:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,405</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, stopped</td>
-                    </tr>
-                    <tr>
-                        <td>90</td>
-                        <td>Jan 19</td>
-                        <td>11:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,380</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Rally continuation to 25,420!</td>
-                    </tr>
-                    <tr>
-                        <td>89</td>
-                        <td>Jan 19</td>
-                        <td>11:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,360</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Strong continuation</td>
-                    </tr>
-                    <tr>
-                        <td>88</td>
-                        <td>Jan 19</td>
-                        <td>10:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S 90°)</td>
-                        <td>25,320</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 EMA flipped BULL, rally starts</td>
-                    </tr>
-                    <tr>
-                        <td>87</td>
-                        <td>Jan 19</td>
-                        <td>10:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,310</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Chop before EMA flip</td>
-                    </tr>
-                    <tr>
-                        <td>86</td>
-                        <td>Jan 19</td>
-                        <td>09:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A S 90°)</td>
-                        <td>25,285</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 RTH LOD bounce! 90° held</td>
-                    </tr>
-                    <tr>
-                        <td>85</td>
-                        <td>Jan 19</td>
-                        <td>08:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,320</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, more selling</td>
-                    </tr>
-                    <tr>
-                        <td>84</td>
-                        <td>Jan 19</td>
-                        <td>07:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,340</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Small bounce in consolidation</td>
-                    </tr>
-                    <tr>
-                        <td>83</td>
-                        <td>Jan 19</td>
-                        <td>06:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,295</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Bounce off session lows</td>
-                    </tr>
-                    <tr>
-                        <td>82</td>
-                        <td>Jan 19</td>
-                        <td>06:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,300</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Near lows, bounced</td>
-                    </tr>
-                    <tr>
-                        <td>81</td>
-                        <td>Jan 19</td>
-                        <td>05:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,280</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">🔥 Caught LOD bounce!</td>
-                    </tr>
-                    <tr>
-                        <td>80</td>
-                        <td>Jan 19</td>
-                        <td>05:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,300</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Continuation to 25,260 LOD!</td>
-                    </tr>
-                    <tr>
-                        <td>79</td>
-                        <td>Jan 19</td>
-                        <td>04:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,360</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, waterfall continued</td>
-                    </tr>
-                    <tr>
-                        <td>78</td>
-                        <td>Jan 19</td>
-                        <td>04:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S M)</td>
-                        <td>25,385</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+3R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥 Monster waterfall short!</td>
-                    </tr>
-                    <tr>
-                        <td>77</td>
-                        <td>Jan 19</td>
-                        <td>03:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,365</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, dropped hard</td>
-                    </tr>
-                    <tr>
-                        <td>76</td>
-                        <td>Jan 19</td>
-                        <td>02:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,395</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">With trend, small scalp</td>
-                    </tr>
-                    <tr>
-                        <td>75</td>
-                        <td>Jan 19</td>
-                        <td>02:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,410</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Choppy, stopped on bounce</td>
-                    </tr>
-                    <tr>
-                        <td>74</td>
-                        <td>Jan 19</td>
-                        <td>01:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S HL)</td>
-                        <td>25,420</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Caught session HOD reversal!</td>
-                    </tr>
-
-                    <!-- Day 7: Jan 16 -->
-                    <tr class="day-divider">
-                        <td colspan="9">📅 FRIDAY, JAN 16 — DAY 7 (BEAR WATERFALL | -250pts from overnight high | 7W/3L = +11R)</td>
-                    </tr>
-                    <tr>
-                        <td>73</td>
-                        <td>Jan 16</td>
-                        <td>13:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG</td>
-                        <td>25,680</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Small bounce into close</td>
-                    </tr>
-                    <tr>
-                        <td>72</td>
-                        <td>Jan 16</td>
-                        <td>12:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S UN)</td>
-                        <td>25,720</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Chop zone, stopped</td>
-                    </tr>
-                    <tr>
-                        <td>71</td>
-                        <td>Jan 16</td>
-                        <td>12:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S UNG)</td>
-                        <td>25,720</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Bounced off support</td>
-                    </tr>
-                    <tr>
-                        <td>70</td>
-                        <td>Jan 16</td>
-                        <td>11:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (S @ANC)</td>
-                        <td>25,690</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Bounce off lows</td>
-                    </tr>
-                    <tr>
-                        <td>69</td>
-                        <td>Jan 16</td>
-                        <td>11:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,660</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Caught the exact LOD!</td>
-                    </tr>
-                    <tr>
-                        <td>68</td>
-                        <td>Jan 16</td>
-                        <td>10:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,750</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Continuation short to lows</td>
-                    </tr>
-                    <tr>
-                        <td>67</td>
-                        <td>Jan 16</td>
-                        <td>09:35</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (A M)</td>
-                        <td>25,875</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+5R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥🔥 MONSTER! Waterfall to 25,625!</td>
-                    </tr>
-                    <tr>
-                        <td>66</td>
-                        <td>Jan 16</td>
-                        <td>09:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S v)</td>
-                        <td>25,870</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Top of spike, reversed hard</td>
-                    </tr>
-                    <tr>
-                        <td>65</td>
-                        <td>Jan 16</td>
-                        <td>08:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-short">▼ SHORT (S v)</td>
-                        <td>25,855</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Caught early reversal</td>
-                    </tr>
-                    <tr>
-                        <td>64</td>
-                        <td>Jan 16</td>
-                        <td>07:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S v)</td>
-                        <td>25,850</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Pre-market push to 25,875</td>
-                    </tr>
-
-                    <!-- Day 6: Jan 15 -->
-                    <tr class="day-divider">
-                        <td colspan="9">📅 THURSDAY, JAN 15 — DAY 6 (BULL → Chop | Rally to 25,960 then grind | 6W/5L = +5R)</td>
-                    </tr>
-                    <tr>
-                        <td>63</td>
-                        <td>Jan 15</td>
-                        <td>12:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,905</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">EMA flip attempt, bounced</td>
-                    </tr>
-                    <tr>
-                        <td>62</td>
-                        <td>Jan 15</td>
-                        <td>12:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,920</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend scalp at 0/8</td>
-                    </tr>
-                    <tr>
-                        <td>61</td>
-                        <td>Jan 15</td>
-                        <td>11:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,900</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Chop zone, stopped at 7/8</td>
-                    </tr>
-                    <tr>
-                        <td>60</td>
-                        <td>Jan 15</td>
-                        <td>11:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (Y S)</td>
-                        <td>25,910</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Bounce off VWAP area</td>
-                    </tr>
-                    <tr>
-                        <td>59</td>
-                        <td>Jan 15</td>
-                        <td>10:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,880</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Pullback deeper than expected</td>
-                    </tr>
-                    <tr>
-                        <td>58</td>
-                        <td>Jan 15</td>
-                        <td>10:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,890</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Rally continuation to 25,920</td>
-                    </tr>
-                    <tr>
-                        <td>57</td>
-                        <td>Jan 15</td>
-                        <td>09:35</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,920</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Top of spike, pulled back</td>
-                    </tr>
-                    <tr>
-                        <td>56</td>
-                        <td>Jan 15</td>
-                        <td>09:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,850</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+3R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥 Caught RTH push to 25,960!</td>
-                    </tr>
-                    <tr>
-                        <td>55</td>
-                        <td>Jan 15</td>
-                        <td>08:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,810</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+2R</td>
-                        <td style="color: var(--text-secondary)">🔥 Pre-market continuation</td>
-                    </tr>
-                    <tr>
-                        <td>54</td>
-                        <td>Jan 15</td>
-                        <td>07:30</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (A S)</td>
-                        <td>25,795</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Early entry, stopped on dip</td>
-                    </tr>
-                    <tr>
-                        <td>53</td>
-                        <td>Jan 15</td>
-                        <td>07:00</td>
-                        <td><span class="bias-tag bias-bull">BULL</span></td>
-                        <td class="trade-long">▲ LONG (S)</td>
-                        <td>25,780</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+1R</td>
-                        <td style="color: var(--text-secondary)">Pre-market grind</td>
-                    </tr>
-
-                    <!-- Day 5: Jan 14 -->
-                    <tr class="day-divider">
-                        <td colspan="9">📅 WEDNESDAY, JAN 14 — DAY 5 (BEAR TREND DAY | -280pts Waterfall | 4W/6L = +10R)</td>
-                    </tr>
-                    <tr>
-                        <td>52</td>
-                        <td>Jan 14</td>
-                        <td>11:15</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (A)</td>
-                        <td>25,560</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Late entry, bounced off lows</td>
-                    </tr>
-                    <tr>
-                        <td>51</td>
-                        <td>Jan 14</td>
-                        <td>11:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (B)</td>
-                        <td>25,650</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+4R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥 Rode to session lows 25,520!</td>
-                    </tr>
-                    <tr>
-                        <td>50</td>
-                        <td>Jan 14</td>
-                        <td>10:45</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,640</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Bounce failed, trend too strong</td>
-                    </tr>
-                    <tr>
-                        <td>49</td>
-                        <td>Jan 14</td>
-                        <td>10:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (B)</td>
-                        <td>25,680</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+3R</td>
-                        <td style="color: var(--text-secondary)">🔥 With trend, clean drop</td>
-                    </tr>
-                    <tr>
-                        <td>48</td>
-                        <td>Jan 14</td>
-                        <td>10:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,640</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend knife catch</td>
-                    </tr>
-                    <tr>
-                        <td>47</td>
-                        <td>Jan 14</td>
-                        <td>09:45</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,680</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend, stopped out</td>
-                    </tr>
-                    <tr>
-                        <td>46</td>
-                        <td>Jan 14</td>
-                        <td>09:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,780</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+5R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥🔥 MONSTER! Through ONL to 25,600!</td>
-                    </tr>
-                    <tr>
-                        <td>45</td>
-                        <td>Jan 14</td>
-                        <td>08:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S)</td>
-                        <td>25,800</td>
-                        <td><span class="trade-win">WIN</span></td>
-                        <td style="color: var(--accent-green)">+4R</td>
-                        <td style="color: var(--text-secondary)">🔥🔥 Pre-market continuation!</td>
-                    </tr>
-                    <tr>
-                        <td>44</td>
-                        <td>Jan 14</td>
-                        <td>08:00</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-short">▼ SHORT (S M)</td>
-                        <td>25,800</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Early entry, stopped on bounce</td>
-                    </tr>
-                    <tr>
-                        <td>43</td>
-                        <td>Jan 14</td>
-                        <td>07:30</td>
-                        <td><span class="bias-tag bias-bear">BEAR</span></td>
-                        <td class="trade-long">▲ LONG (A)</td>
-                        <td>25,750</td>
-                        <td><span class="trade-loss">LOSS</span></td>
-                        <td style="color: var(--accent-red)">-1R</td>
-                        <td style="color: var(--text-secondary)">Counter-trend overnight</td>
-                    </tr>
-
-                    <!-- Days 1-4 abbreviated for space -->
-                    <tr class="day-divider">
-                        <td colspan="9">📅 EARLIER DAYS (1-4) — See full log above for details | Combined: 27W/15L = +36R</td>
+                        <td colspan="9">📅 DAYS 1-8 — See full log in previous updates | Combined: 66W/47L = +82R</td>
                     </tr>
                 </tbody>
             </table>
@@ -1154,15 +620,15 @@
                 </div>
                 <div class="config-item">
                     <h4>EMA BIAS</h4>
-                    <p>Mode: <span>24HR MODE</span><br>Current: <span style="color: var(--accent-red)">BEAR</span></p>
+                    <p>Mode: <span>24HR MODE</span><br>Current: <span style="color: var(--accent-green)">BULL</span></p>
                 </div>
                 <div class="config-item">
                     <h4>KEY LEVELS</h4>
-                    <p>HOD: <span>25,400.00</span><br>90°: <span>25,313.25</span><br>LOD: <span>25,135.00</span></p>
+                    <p>HOD: <span>25,480.00</span><br>90°: <span>25,313.25</span><br>LOD: <span>25,040.00</span></p>
                 </div>
                 <div class="config-item">
                     <h4>KEY INSIGHT</h4>
-                    <p style="color: var(--accent-lime);">🔥 9 GREEN DAYS STRAIGHT! Triple reversal day: BEAR→BULL→BEAR. Both EMA flips were tradeable!</p>
+                    <p style="color: var(--accent-lime);">🚀 PERFECT 10/10 DAYS! 440pt rally from LOD. EMA flip at 10:00 = monster long opportunity!</p>
                 </div>
             </div>
         </div>
@@ -1170,7 +636,7 @@
         <footer>
             <p>AI Brooks V6 PRO 30-Day Test | <a href="https://youtube.com/@QuadThreatAI" target="_blank">QuadThreat AI</a></p>
             <p style="margin-top: 10px; font-size: 0.8rem;">Results tracked live. Past performance does not guarantee future results.</p>
-            <p style="margin-top: 10px;">Last Updated: Tuesday, January 20, 2026 @ 6:05 PM ET</p>
+            <p style="margin-top: 10px;">Last Updated: Wednesday, January 21, 2026 @ 1:15 PM ET</p>
         </footer>
     </div>
 </body>
